@@ -10,7 +10,7 @@ git clone git@github.com:kamildlugolecki19998/rekrutacja-cssa.git
 
 ## Setup
 
-Przejdz do katalogu projektu i zbuduj projekt za pomocą skrpyu setup.sh
+Przejdz do katalogu projektu i zbuduj projekt za pomocą skryptu setup.sh
 
 ```sh
 cd rekrutacja-cssa
@@ -19,15 +19,15 @@ cd rekrutacja-cssa
 
 ## Testowanie
 
-Aby przetestować działanie aplikacji przejdz na ares localhost/api/doc/
+[Aby przetestować działanie aplikacji przejdz na adres](localhost/api/doc/)
 
 Projekt zawiera natępujące endpinty 
 
 Uzyskanie tokenu do autoryzacji
--localhost/api/login
+[login]localhost/api/login
 
 Dokonanie kalkulacji
--/api/repayment_schedule
+[Dokonanie kalkulacji]/api/repayment_schedule
 
 Wylaczenie poszczególnej kalkulacji
 -/api/repayment_schedule/{id}/exclude
