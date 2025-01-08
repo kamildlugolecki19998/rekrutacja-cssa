@@ -41,4 +41,4 @@ Dane do autoryzacji
 #### Wylistowanie 4 ostatnich kalkulacji
 >/api/repayment_schedules
 
-### Aby z autoryzować się za pomocą tokenu uzyskany token nalezy wkleić do formularza który pokaze się po naciścięcu przyciku authorize a następnie zatwierdzić przyciskiem Authorize
+### Aby z autoryzować się za pomocą tokenu uzyskany token nalezy wkleić do formularza który pokaże się po naciścięcu przycisku Authorize a następnie zatwierdzić przyciskiem Authorize
