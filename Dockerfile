@@ -43,26 +43,14 @@ WORKDIR /var/www/symfony
 #    lexik/jwt-authentication-bundle \
 #    moneyphp/money"
 
-
 COPY ./app/composer.json ./app/composer.lock /var/www/symfony/
-
 
 # Install Symfony dependencies
 RUN run "composer install --prefer-dist --no-scripts --no-interaction"
-RUN composer install
+
 # Set permissions for Symfony folders
 RUN chown -R www-data:www-data var/cache var/log config
 
-# Create the directory for JWT keys and generate keys
-#RUN mkdir -p /var/www/symfony/config/jwt && \
-#    openssl genpkey -algorithm RSA -out /var/www/symfony/config/jwt/private.pem -pkeyopt rsa_keygen_bits:4096 && \
-#    openssl rsa -pubout -in /var/www/symfony/config/jwt/private.pem -out /var/www/symfony/config/jwt/public.pem && \
-#    chmod 600 /var/www/symfony/config/jwt/private.pem && chmod 644 /var/www/symfony/config/jwt/public.pem
-
-# Set the entrypoint to the script
-# ENTRYPOINT ["/var/www/symfony/entrypoint.sh"]
-
-# Expose port 9000 for PHP-FPM
 EXPOSE 9000
 
 # Start PHP-FPM server
