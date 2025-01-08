@@ -30,7 +30,7 @@ WORKDIR /var/www/symfony
 
 COPY ./app/composer.json ./app/composer.lock /var/www/symfony/
 
-RUN run "composer install --prefer-dist --no-scripts --no-interaction"
+#RUN run "composer install --prefer-dist --no-scripts --no-interaction"
 
 EXPOSE 9000
 
