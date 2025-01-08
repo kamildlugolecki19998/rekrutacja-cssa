@@ -19,10 +19,13 @@ echo "Running composer install inside the container..."
 #docker exec -it cs-php sh -c "composer install --prefer-dist --no-scripts --no-interaction"
 docker exec -it cs-php sh -c "composer install --prefer-dist --no-scripts --no-interaction"
 
-
 # Dodatkowe kroki, jeśli są wymagane (np. migracja bazy danych)
  echo "Running database migrations..."
  docker exec -it cs-php sh -c "php bin/console doctrine:migrations:migrate --no-interaction"
+
+echo "Generating JWT keys..."
+ docker exec -it cs-php sh -c "php bin/console lexik:jwt:generate-keypair"
+
 
 # Informacja o zakończeniu
 echo "Setup complete!"
