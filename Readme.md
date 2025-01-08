@@ -36,7 +36,7 @@ Dane do autoryzacji
 [/api/repayment_schedule](/api/repayment_schedule)
 
 #### Wylaczenie poszczególnej kalkulacji
-[/api/repayment_schedule/{id}/exclude](/api/repayment_schedule/{id}/exclude)
+##### /api/repayment_schedule/{id}/exclude
 
 #### Wylistowanie 4 ostatnich kalkulacji
 [/api/repayment_schedules](/api/repayment_schedules)
