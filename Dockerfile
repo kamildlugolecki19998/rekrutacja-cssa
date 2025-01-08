@@ -38,8 +38,7 @@ RUN chown -R www-data:www-data /var/www/symfony
 #    chown -R www-data:www-data var/cache var/log config
 WORKDIR /var/www/symfony
 
-RUN run "composer require symfony/orm-pack \
- symfony/maker-bundle \
+RUN run "composer require symfony/maker-bundle \
   symfony/security-bundle \
    lexik/jwt-authentication-bundle \
    moneyphp/money"
