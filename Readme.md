@@ -35,4 +35,4 @@ Wylaczenie poszczególnej kalkulacji
 Wylistowanie 4 ostatnich kalkulacji
 [/api/repayment_schedules](/api/repayment_schedules)
 
-###Aby z autoryzować się za pomocą tokenu uzyskany token nalezy wkleić do formularza który pokaze się po naciścięcu przyciku authorize a następnie zatwierdzić przyciskiem Authorize
+### Aby z autoryzować się za pomocą tokenu uzyskany token nalezy wkleić do formularza który pokaze się po naciścięcu przyciku authorize a następnie zatwierdzić przyciskiem Authorize
