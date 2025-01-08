@@ -33,12 +33,12 @@ Dane do autoryzacji
 ```
 
 #### Dokonanie kalkulacji
-[/api/repayment_schedule](/api/repayment_schedule)
+>/api/repayment_schedule
 
 #### Wylaczenie poszczególnej kalkulacji
 >/api/repayment_schedule/{id}/exclude
 
 #### Wylistowanie 4 ostatnich kalkulacji
-[/api/repayment_schedules](/api/repayment_schedules)
+>/api/repayment_schedules
 
 ### Aby z autoryzować się za pomocą tokenu uzyskany token nalezy wkleić do formularza który pokaze się po naciścięcu przyciku authorize a następnie zatwierdzić przyciskiem Authorize
