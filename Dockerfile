@@ -45,7 +45,7 @@ RUN run "composer require symfony/maker-bundle \
 
 # Install Symfony dependencies
 RUN run "composer install --prefer-dist --no-scripts --no-interaction"
-RUN compser composer
+RUN composer install
 # Set permissions for Symfony folders
 RUN chown -R www-data:www-data var/cache var/log config
 
