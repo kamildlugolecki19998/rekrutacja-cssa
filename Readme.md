@@ -26,6 +26,12 @@ cd rekrutacja-cssa
 #### Uzyskanie tokenu do autoryzacji
 [localhost/api/login](localhost/api/login)
 
+Dane do autoryzacji
+```sh
+"email": "user@example.com",
+"password": "password"
+```
+
 #### Dokonanie kalkulacji
 [/api/repayment_schedule](/api/repayment_schedule)
 
