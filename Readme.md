@@ -19,20 +19,20 @@ cd rekrutacja-cssa
 
 ## Testowanie
 
-[Aby przetestować działanie aplikacji przejdz na adres](localhost/api/doc/)
+### [Aby przetestować działanie aplikacji przejdz na adres](localhost/api/doc/)
 
-Projekt zawiera natępujące endpinty 
+#### Projekt zawiera natępujące endpinty 
 
-Uzyskanie tokenu do autoryzacji
+#### Uzyskanie tokenu do autoryzacji
 [localhost/api/login](localhost/api/login)
 
-Dokonanie kalkulacji
+#### Dokonanie kalkulacji
 [/api/repayment_schedule](/api/repayment_schedule)
 
-Wylaczenie poszczególnej kalkulacji
+#### Wylaczenie poszczególnej kalkulacji
 [/api/repayment_schedule/{id}/exclude](/api/repayment_schedule/{id}/exclude)
 
-Wylistowanie 4 ostatnich kalkulacji
+#### Wylistowanie 4 ostatnich kalkulacji
 [/api/repayment_schedules](/api/repayment_schedules)
 
 ### Aby z autoryzować się za pomocą tokenu uzyskany token nalezy wkleić do formularza który pokaze się po naciścięcu przyciku authorize a następnie zatwierdzić przyciskiem Authorize
