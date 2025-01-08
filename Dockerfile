@@ -48,9 +48,6 @@ COPY ./app/composer.json ./app/composer.lock /var/www/symfony/
 # Install Symfony dependencies
 RUN run "composer install --prefer-dist --no-scripts --no-interaction"
 
-# Set permissions for Symfony folders
-RUN chown -R www-data:www-data var/cache var/log config
-
 EXPOSE 9000
 
 # Start PHP-FPM server
