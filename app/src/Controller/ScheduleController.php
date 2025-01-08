@@ -66,7 +66,7 @@ class ScheduleController extends AbstractController
     ): JsonResponse
     {
         if (!$user) {
-            return new JsonResponse('You must me Authorized to exclute calculation', Response::HTTP_UNAUTHORIZED);
+            return new JsonResponse('You must me Authorized to see calculations', Response::HTTP_UNAUTHORIZED);
         }
         $loandCalculations = $loanCalculationRepository->getLastCalcualtions($filter->filter, 4);
 
