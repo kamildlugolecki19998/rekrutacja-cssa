@@ -14,10 +14,6 @@ class LoanCalculation
     #[ORM\Column]
     private ?int $id = null;
 
-    // #[ORM\ManyToOne(inversedBy: 'loanCalculations')]
-    // #[ORM\JoinColumn(nullable: true)]
-    // private ?User $user = null;
-
     #[ORM\Column]
     private ?int $totalPrincipal = null;
 
@@ -48,18 +44,6 @@ class LoanCalculation
     {
         return $this->id;
     }
-
-    // public function getUser(): ?User
-    // {
-    //     return $this->user;
-    // }
-
-    // public function setUser(?User $user): static
-    // {
-    //     $this->user = $user;
-
-    //     return $this;
-    // }
 
     public function getTotalPrincipal(): ?int
     {
