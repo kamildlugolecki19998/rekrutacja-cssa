@@ -38,10 +38,14 @@ RUN chown -R www-data:www-data /var/www/symfony
 #    chown -R www-data:www-data var/cache var/log config
 WORKDIR /var/www/symfony
 
-RUN run "composer require symfony/maker-bundle \
-  symfony/security-bundle \
-   lexik/jwt-authentication-bundle \
-   moneyphp/money"
+# RUN run "composer require symfony/maker-bundle \
+#   symfony/security-bundle \
+#    lexik/jwt-authentication-bundle \
+#    moneyphp/money"
+
+
+COPY ./app/composer.json ./app/composer.lock /var/www/symfony/
+
 
 # Install Symfony dependencies
 RUN run "composer install --prefer-dist --no-scripts --no-interaction"
