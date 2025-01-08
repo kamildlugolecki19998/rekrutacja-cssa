@@ -24,7 +24,7 @@ cd rekrutacja-cssa
 #### Projekt zawiera natępujące endpinty 
 
 #### Uzyskanie tokenu do autoryzacji
-[localhost/api/login](localhost/api/login)
+>localhost/api/login
 
 Dane do autoryzacji
 ```sh
